@@ -3,7 +3,7 @@ enum Suits {
     Hearts,
     Spades,
     Clubs,
-    Dismonds,
+    Diamonds,
 }
 
 #[derive(Copy, Clone, Debug)]
@@ -20,7 +20,9 @@ fn generate_deck() {
             card_num: 1,
             card_suit: Suits::Hearts,
         });
+    }
 
+    for i in deck.iter() {
         println!("{:?}", i);
     }
 }
