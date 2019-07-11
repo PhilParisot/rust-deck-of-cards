@@ -1,5 +1,7 @@
 use std::io;
 
+const CARDSINDECK: usize = 52;
+
 #[derive(PartialEq, Copy, Clone, Debug)]
 enum Suits {
     Hearts,
@@ -15,8 +17,8 @@ struct Card {
 }
 
 impl Card {
-    fn generate_deck() -> [Option<Card>; 52] {
-        let mut deck: [Option<Card>; 52] = [None; 52];
+    fn generate_deck() -> [Option<Card>; CARDSINDECK] {
+        let mut deck: [Option<Card>; CARDSINDECK] = [None; CARDSINDECK];
 
         let mut temp_deck_index = 0;
 

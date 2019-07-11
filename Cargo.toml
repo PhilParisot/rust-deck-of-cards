@@ -1,5 +1,5 @@
 [package]
-name = "helloworld"
+name = "deck_of_cards"
 version = "0.1.0"
 authors = ["Philippe Parisot <pparisot3@gmail.com>"]
 edition = "2018"
